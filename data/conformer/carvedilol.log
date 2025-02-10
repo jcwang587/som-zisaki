@@ -1,0 +1,27 @@
+Arguments and Options:
+           Input: '/home/wanjiach/github/som-zisaki/data/conformer/carvedilol.mae'
+          Output: 'carvedilol-out.maegz'
+   Configuration: '/apps/prod/COMPCHEM/schrodinger/schrodinger/mmshare-v6.8/data/fast3d/default.json'
+         Library: '/apps/prod/COMPCHEM/schrodinger/schrodinger/mmshare-v6.8/bin/Linux-x86_64/../../data/fast3d/fragments.f3d'
+         Library: '/apps/prod/COMPCHEM/schrodinger/schrodinger/mmshare-v6.8/bin/Linux-x86_64/../../data/fast3d/rdkit_fragments.f3d'
+          Stereo: 1 (from properties, geometry)
+        Optimize: true (Force Field: OPLS_2005)
+  Vary Nitrogens: true
+     Keep Amides: false
+ Drop properties: false
+Drop problematic: false
+Problematic file: 'carvedilol-failed.maegz'
+
+Desired number of conformers: 1000
+Maximum number of conformers: 1000
+     Auto-increase threshold: 9
+
+    20.32 sec :        1 structures processed;   0 failed;          329 stored
+
+1 structures processed
+0 structures failed
+329 structures stored (329.0000 conformers per input structure)
+
+Initialization time: 0.2670 seconds
+       Working time: 20.1991 seconds
+              Speed: 0.0489 input structures per second

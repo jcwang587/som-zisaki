@@ -1,0 +1,27 @@
+Arguments and Options:
+           Input: '/home/wanjiach/github/som-zisaki/data/conformer/amlodipine.mae'
+          Output: 'amlodipine-out.maegz'
+   Configuration: '/apps/prod/COMPCHEM/schrodinger/schrodinger/mmshare-v6.8/data/fast3d/default.json'
+         Library: '/apps/prod/COMPCHEM/schrodinger/schrodinger/mmshare-v6.8/bin/Linux-x86_64/../../data/fast3d/fragments.f3d'
+         Library: '/apps/prod/COMPCHEM/schrodinger/schrodinger/mmshare-v6.8/bin/Linux-x86_64/../../data/fast3d/rdkit_fragments.f3d'
+          Stereo: 1 (from properties, geometry)
+        Optimize: true (Force Field: OPLS_2005)
+  Vary Nitrogens: true
+     Keep Amides: false
+ Drop properties: false
+Drop problematic: false
+Problematic file: 'amlodipine-failed.maegz'
+
+Desired number of conformers: 1000
+Maximum number of conformers: 1000
+     Auto-increase threshold: 9
+
+    36.29 sec :        1 structures processed;   0 failed;          910 stored
+
+1 structures processed
+0 structures failed
+910 structures stored (910.0000 conformers per input structure)
+
+Initialization time: 0.3514 seconds
+       Working time: 36.0872 seconds
+              Speed: 0.0274 input structures per second
