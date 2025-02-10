@@ -5,7 +5,7 @@
 
 # Directory containing .mae files
 mae_dir="/home/wanjiach/github/som-zisaki/data/mae"
-conformer_dir="/home/wanjiach/github/som-zisaki/data/conformer"
+conformer_dir="/home/wanjiach/github/som-zisaki/data/conformer_maegz"
 
 # Create the maegz_c directory if it doesn't exist
 mkdir -p "$conformer_dir"
