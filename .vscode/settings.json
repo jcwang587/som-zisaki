@@ -1,0 +1,10 @@
+{
+    "python.analysis.extraPaths": [
+        "./src",
+        "/home/wanjiach/schrodinger/virtual-env/som-pred.ve/lib/python3.11/site-packages",
+        "/apps/prod/COMPCHEM/schrodinger/current/internal/lib/python3.11/site-packages"
+    ],
+    "python.defaultInterpreterPath": "/home/wanjiach/schrodinger/virtual-env/som-pred.ve/bin/python",
+    "python.envFile": "${workspaceFolder}/.env",
+    "win-ca.inject": "append"
+}
