@@ -192,11 +192,32 @@ class CoxidesAnalysis:
                         propensity = "Moderate"
                     if bde > self.medium_coff:
                         propensity = "Low"
+
+                    hydrogen_atoms = []
+                    # Find the hydrogen atoms attached to the carbon atoms
+                    for bond in atom.bond:
+                        if bond.atom1.element == "H" or bond.atom2.element == "H":
+                            hydrogen_atoms.append(
+                                bond.atom1 if bond.atom1.element == "H" else bond.atom2
+                            )
+
+                    hydrogen_sasa = 0
+                    # Get the SASA of the hydrogen atoms
+                    for hydrogen_atom in hydrogen_atoms:
+                        if "r_user_sasa" in hydrogen_atom.property:
+                            hydrogen_sasa += hydrogen_atom.property["r_user_sasa"]
+
+                    hydrogen_sasa = (
+                        hydrogen_sasa / len(hydrogen_atoms)
+                        if len(hydrogen_atoms) > 0
+                        else 0
+                    )
+
                     row = [
                         str(atom.element) + str(atom.index),
                         str(atom.property["r_user_CH-BDE"]),
                         propensity,
-                        f"{atom.property['r_user_sasa']:.2f}",
+                        f"{hydrogen_sasa:.2f}",
                     ]
                     data.append(row)
                 except KeyError:
